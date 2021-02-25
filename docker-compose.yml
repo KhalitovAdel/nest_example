@@ -1,0 +1,9 @@
+version: '3'
+services:
+  rabbit:
+    image: 'rabbitmq'
+    restart: always
+    container_name: 'remove_this_rabbit_after_testing_nestjs'
+    ports:
+    - '8813:5672'
+
